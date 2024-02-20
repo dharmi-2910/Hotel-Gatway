@@ -15,6 +15,11 @@ public class ServiceImpl implements HotelService{
     private final HotelRepository hotelRepository;
 
     @Override
+    public Hotel getHotel(String hotelId) {
+        return null;
+    }
+
+    @Override
     public Hotel create(Hotel hotel){
         return hotelRepository.save(hotel);
     }
