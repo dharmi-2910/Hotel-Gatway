@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface HotelService {
 
     @GetMapping("/hotels/{hotelId}")
-    Hotel getHotel(@PathVariable String hotelId);
+    Hotel getHotel(@PathVariable int hotelId);
 
     public Hotel create(Hotel hotel);
 
