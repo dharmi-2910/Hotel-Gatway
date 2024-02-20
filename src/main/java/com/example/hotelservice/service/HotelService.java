@@ -10,7 +10,5 @@ public interface HotelService {
 
     public List<Hotel> getAll();
 
-//    public Optional<Hotel> getInteger(int id);
-
     Optional<Hotel> getLong(int id);
 }

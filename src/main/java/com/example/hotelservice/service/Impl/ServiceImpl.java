@@ -16,8 +16,6 @@ public class ServiceImpl implements HotelService{
 
     @Override
     public Hotel create(Hotel hotel){
-//        long hotelId= Long.parseLong(null);
-//        hotel.setId(hotelId);
         return hotelRepository.save(hotel);
     }
     @Override
