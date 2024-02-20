@@ -9,10 +9,9 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/staffs")
 public class StaffController {
 
-        @GetMapping
+        @GetMapping("/staffs")
         public ResponseEntity<List<String>> getStaffs(){
            List<String> list = Arrays.asList("abc","xyz","pqr","sql");
             return new ResponseEntity<>(list, HttpStatus.OK);
