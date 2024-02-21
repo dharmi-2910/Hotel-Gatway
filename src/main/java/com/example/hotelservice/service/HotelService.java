@@ -13,9 +13,9 @@ public interface HotelService {
     @GetMapping("/hotels/{hotelId}")
     Hotel getHotel(@PathVariable int hotelId);
 
-    public Hotel create(Hotel hotel);
+     Hotel create(Hotel hotel);
 
-    public List<Hotel> getAll();
+     List<Hotel> getAll();
 
     Optional<Hotel> getLong(int id);
 }
