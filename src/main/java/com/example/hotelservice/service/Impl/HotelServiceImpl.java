@@ -12,8 +12,8 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class ServiceImpl implements HotelService{
-    private static final Logger logger = LoggerFactory.getLogger(ServiceImpl.class);
+public class HotelServiceImpl implements HotelService{
+    private static final Logger logger = LoggerFactory.getLogger(HotelServiceImpl.class);
     private final HotelRepository hotelRepository;
 
     @Override

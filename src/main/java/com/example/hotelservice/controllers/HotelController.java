@@ -1,6 +1,6 @@
 package com.example.hotelservice.controllers;
 
-import com.example.hotelservice.service.Impl.ServiceImpl;
+import com.example.hotelservice.service.Impl.HotelServiceImpl;
 import com.example.hotelservice.entities.Hotel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,7 +12,7 @@ import java.util.Optional;
 @RestController
 @RequiredArgsConstructor
 public class HotelController {
-    private final ServiceImpl hotelService;
+    private final HotelServiceImpl hotelService;
 
     @PostMapping("/hotels/{hotelId}")
     public ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel){
